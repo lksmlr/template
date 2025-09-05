@@ -1,4 +1,4 @@
-name: Ruff
+name: ruff check and format
 
 on:
   pull_request:
@@ -15,14 +15,14 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Install uv
+      - name: install uv
         run: curl -LsSf https://astral.sh/uv/install.sh | sh
 
-      - name: Install Ruff via uv
+      - name: install ruff
         run: uv tool install ruff
 
-      - name: Run Ruff check
+      - name: ruff check --fix
         run: uv run ruff check --fix
 
-      - name: Run Ruff format
+      - name: ruff format
         run: uv run ruff format .
