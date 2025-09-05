@@ -14,5 +14,3 @@ target-vserion = "py312"
 
 [tool.ruff.format]
 quote-style = "double"
-
-dependencies = []
