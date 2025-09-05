@@ -1,0 +1,18 @@
+[project]
+name = "template"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pre-commit>=4.3.0",
+]
+
+[tool.ruff]
+line-length = 88
+target-vserion = "py312"
+
+[tool.ruff.format]
+quote-style = "double"
+
+dependencies = []
