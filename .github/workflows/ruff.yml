@@ -18,5 +18,8 @@ jobs:
       - name: Install uv
         run: curl -LsSf https://astral.sh/uv/install.sh | sh
 
-      - name: Run Ruff
-        run: uv run ruff check .
+      - name: Run Ruff check
+        run: uv run ruff check --fix
+
+      - name: Run Ruff check
+        run: uv run ruff format .
